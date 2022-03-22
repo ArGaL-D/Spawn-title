@@ -26,8 +26,6 @@ class SpawnTitle:
 
             self.line_one += self.char_border
             
-                
-
         for index in range(self.side_spaces):
             space_char += ' ' 
 
@@ -64,8 +62,6 @@ class SpawnTitle:
     def set_style_border_two(self, boolean):
          self.isActiveBorderStyle  = boolean
 
-
-
 def print_options():
     print("\tWelcome \n")    
     print("[+]  -r      Sets a random border")
@@ -74,7 +70,6 @@ def print_options():
     print("[+]  -s      Sets total spaces")
     print("[+]  -c      Sets a character")
     print("[+]  -h      Help")
-
 
 def main():
     title = SpawnTitle()
@@ -92,7 +87,6 @@ def main():
         argsList.remove('-h')
         print_options()
         sys.exit()
-
 
     try:
 
@@ -112,7 +106,5 @@ def main():
 
     except getopt.GetoptError as error:
         print(error)
-
-    
 
 main()
