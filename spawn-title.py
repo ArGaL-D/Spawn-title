@@ -67,13 +67,13 @@ class SpawnTitle:
 
 
 def print_options():
-    print("Welcome \n")    
+    print("\tWelcome \n")    
     print("[+]  -r      Sets a random border")
-    print("[+]  -b      Adds two more lines for the title")
+    print("[+]  -l      Adds two more lines for the title")
     print("[+]  -t      Sets the title")
     print("[+]  -s      Sets total spaces")
     print("[+]  -c      Sets a character")
-    print("[+]  -h      --Help")
+    print("[+]  -h      Help")
 
 
 def main():
@@ -84,8 +84,8 @@ def main():
         argsList.remove('-r')
         title.set_rand_char_border()
 
-    if '-b' in argsList:
-        argsList.remove('-b')
+    if '-l' in argsList:
+        argsList.remove('-l')
         title.set_style_border_two(True)
 
     if '-h' in argsList:
